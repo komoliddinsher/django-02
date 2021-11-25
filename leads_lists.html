@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+       
+        <title><font size="6">Django kursi </font></title>
+        
+   
+    <style>
+        .mijoz   {
+
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 8px;
+            padding-right: 8px;
+            margin-top: 10px;
+            background-color: peachpuff;
+            font-size: 21px;
+            width: 100%;
+        }
+    </style>              
+</head>
+    <body bgcolor="b5dcb3">
+      <b> <center> <i> <font size="7">Django kursi a'zolari haqida ma'lumot </font></i> </center> </b> 
+     
+
+     <p style="color:#ffffff; ">“Kim ilm yo‘lini tutsa, 
+     Alloh uni jannat yo‘liga yo‘llab qo‘yadi. 
+     Albatta farishtalar ilm talabidagi kishiga rozi bo‘lgan hollarida qanotlarini yozib turadilar” (Hadisdan) <b>
+     </b> </p>
+     <hr/>
+     <p> <center> DJANGO KURSI </center></p>
+      <h1> Mijozlar bo'limi: </h1> 
+     
+       <a href="/leads/create/"> </a>
+        {%for lead in lead %}
+        <div class="mijoz"> 
+           <a href="/leads/{{lead.pk}}/"> 
+           {{lead.familiyasi}}
+            {{lead.ismi}}
+           </a>
+        </div> 
+    
+        {% endfor%}&copy;
+     2021
+
+
+
+   
+    
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
